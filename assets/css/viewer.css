@@ -4,7 +4,7 @@ model-viewer {
 	height: 100%
 }
 
-ar-button {
+button {
 	background-color: #D3D3D3;
 	border-radius: 7px; 
 	border: none; 
