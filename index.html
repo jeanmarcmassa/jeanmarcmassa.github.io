@@ -59,13 +59,12 @@
                                         window.addEventListener('load', function() {
                                                 document.body.className = document.body.className.replace(/\bis-loading\b/, '');
                                                 var toggle = document.getElementById('theme-toggle');
+                                                var sheet = document.getElementById('theme-style');
                                                 toggle.checked = false;
+                                                sheet.setAttribute('href', 'assets/css/main.css');
                                                 toggle.addEventListener('change', function() {
-                                                        var sheet = document.getElementById('theme-style');
-                                                        if (document.getElementById('theme-toggle').checked)
-                                                                sheet.setAttribute('href', 'assets/css/light.css');
-                                                        else
-                                                                sheet.setAttribute('href', 'assets/css/main.css');
+                                                        sheet.setAttribute('href', this.checked ?
+                                                                'assets/css/light.css' : 'assets/css/main.css');
                                                 });
                                         });
                                         document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');

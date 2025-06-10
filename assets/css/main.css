@@ -899,8 +899,12 @@ input:checked + .slider:before {
 
 /* Dark theme colors */
 body {
-  background-color: #111;
+  background-color: #111 !important;
+  background-image: none !important;
   color: #f0f0f0;
+}
+a {
+  color: #8ab4f8;
 }
 label,
 strong,
