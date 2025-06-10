@@ -33,8 +33,4 @@
 		@include breakpoint(xxsmall) {
 			padding: (_size(element-margin) * 0.5);
 		}
-
-		body.is-ie & {
-			height: 100%;
-		}
 	}
