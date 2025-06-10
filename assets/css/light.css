@@ -871,7 +871,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #444;
+  background-color: #ccc;
   transition: .4s;
 }
 .slider:before {
@@ -895,21 +895,4 @@ input:checked + .slider:before {
 }
 .slider.round:before {
   border-radius: 50%;
-}
-
-/* Dark theme colors */
-body {
-  background-color: #111;
-  color: #f0f0f0;
-}
-label,
-strong,
-b,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: #f0f0f0;
 }

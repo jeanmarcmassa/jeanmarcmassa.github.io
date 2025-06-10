@@ -10,13 +10,17 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
+                <link id="theme-style" rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-loading">
 
 		<!-- Wrapper -->
-			<div id="wrapper">
+                        <div id="wrapper">
+                                <label class="switch">
+                                  <input type="checkbox" id="theme-toggle" aria-label="Toggle light theme">
+                                  <span class="slider round"></span>
+                                </label>
 
 				<!-- Main -->
 					<section id="main">
@@ -50,12 +54,23 @@
 
 			<!-- Scripts -->
 			<!--[if lte IE 8]><script src="assets/js/respond.min.js"></script><![endif]-->
-			<script>
-				if ('addEventListener' in window) {
-					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
-					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
-				}
-			</script>
+                        <script>
+                                if ('addEventListener' in window) {
+                                        window.addEventListener('load', function() {
+                                                document.body.className = document.body.className.replace(/\bis-loading\b/, '');
+                                                var toggle = document.getElementById('theme-toggle');
+                                                toggle.checked = false;
+                                                toggle.addEventListener('change', function() {
+                                                        var sheet = document.getElementById('theme-style');
+                                                        if (document.getElementById('theme-toggle').checked)
+                                                                sheet.setAttribute('href', 'assets/css/light.css');
+                                                        else
+                                                                sheet.setAttribute('href', 'assets/css/main.css');
+                                                });
+                                        });
+                                        document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+                                }
+                        </script>
 
 	</body>
 </html>
