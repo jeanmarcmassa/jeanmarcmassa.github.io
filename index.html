@@ -11,6 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/viewer.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
@@ -34,9 +35,24 @@
 								<li><a href="https://www.instagram.com/jeanmarc.93/" class="fa-instagram">Instagram</a></li>
 							</ul>
 						</footer>
+</section>
+
+				<!-- Projekte -->
+					<section id="projekte">
+						<h2>Projekte</h2>
+						<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
+						<model-viewer
+							src="assets/models/f1.glb"
+							ar
+							shadow-intensity="1"
+							camera-controls>
+							<button slot="ar-button">
+								👋 Activate AR
+							</button>
+						</model-viewer>
 					</section>
 
-				<!-- Footer -->
+<!-- Footer -->
 					<footer id="footer">
 						<ul class="copyright">
 							<li>&copy; Jean-Marc Massa</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
