@@ -899,7 +899,7 @@ input:checked + .slider:before {
 
 /* Dark theme colors */
 body {
-  background-color: #111 !important;
+  background-color: #222 !important;
   background-image: none !important;
   color: #f0f0f0;
 }
@@ -916,4 +916,7 @@ h4,
 h5,
 h6 {
   color: #f0f0f0;
+}
+#main {
+  background: #111 !important;
 }
