@@ -1,54 +1,58 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jean-Marc Massa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
 
-<html>
-	<head>
-		<title>Jean-Marc Massa</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="assets/css/main.css" />
-        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-loading">
+  <canvas id="bg"></canvas>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+  <div class="card">
 
-				<!-- Main -->
-					<section id="main">
-						<header>
-                            <span class="avatar"><img src="images/avatar.jpg" alt="Jean-Marc Massa Avatar" /></span>
-							<h1>Jean-Marc Massa</h1>
-							<p>Senior Software Engineer</p>
-						</header>
-						
-						<footer>
-							<ul class="icons">
-								<li><a href="https://ch.linkedin.com/in/jean-marc-massa-0504b399" class="fa-linkedin">LinkedIn</a></li>
-								<li><a href="https://www.instagram.com/jeanmarc.93/" class="fa-instagram">Instagram</a></li>
-							</ul>
-						</footer>
-					</section>
+    <div class="avatar-wrap">
+      <div class="avatar-glow"></div>
+      <div class="avatar-ring"></div>
+      <img class="avatar" src="https://jmassa.ch/images/avatar.jpg" alt="Jean-Marc Massa" />
+    </div>
 
-                    <!-- Demo -->
-                    <section id="demo">
-                        <p><a href="viewer.html">Model-Viewer Demo</a></p>
-                    </section>
+    <h1 class="name">Jean-Marc Massa</h1>
+    <p class="title">Senior Software Engineer</p>
 
-					<!-- Footer -->
-					<footer id="footer">
-						<ul class="copyright">
-							<li>&copy; Jean-Marc Massa</li>
-						</ul>
-					</footer>
+    <div class="divider"></div>
 
-			</div>
+    <nav class="links">
 
-        <!-- Scripts -->
-			<script>
-                if ('addEventListener' in window) {
-                    window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
-                }
-			</script>
+      <a class="link-item" href="https://ch.linkedin.com/in/jean-marc-massa-0504b399" target="_blank" rel="noopener">
+        <i class="fa-brands fa-linkedin link-icon" aria-hidden="true"></i>
+        <span class="link-label">LinkedIn</span>
+        <span class="link-arrow">↗</span>
+      </a>
 
-	</body>
+      <a class="link-item" href="https://www.instagram.com/jeanmarc.93/" target="_blank" rel="noopener">
+        <i class="fa-brands fa-instagram link-icon" aria-hidden="true"></i>
+        <span class="link-label">Instagram</span>
+        <span class="link-arrow">↗</span>
+      </a>
+
+      <a class="link-item" href="https://jmassa.ch/viewer.html" target="_blank" rel="noopener">
+        <i class="fa-solid fa-play link-icon" aria-hidden="true"></i>
+        <span class="link-label">Model-Viewer Demo</span>
+        <span class="link-arrow">↗</span>
+      </a>
+
+    </nav>
+
+    <p class="footer">© Jean-Marc Massa</p>
+  </div>
+
+  <script src="particles.js"></script>
+
+</body>
 </html>
